@@ -22,5 +22,5 @@ public class Service
     [PluginService] public static ChatGui ChatGui { get; private set; } = null!;
 
     public static Lumina.GameData LuminaGameData => DataManager.GameData;
-    public static T? LuminaRow<T>(uint row) where T : Lumina.Excel.ExcelRow => LuminaGameData.GetExcelSheet<T>(Lumina.Data.Language.English)?.GetRow(row);
+    public static T? LuminaRow<T>(uint row) where T : Lumina.Excel.ExcelRow => LuminaGameData.GetExcelSheet<T>(Lumina.Data.Language.Korean)?.GetRow(row);
 }
